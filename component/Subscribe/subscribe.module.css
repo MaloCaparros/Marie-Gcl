@@ -1,0 +1,98 @@
+.contain{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    gap:70px;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(0,0,0,0.4954774145986519) 0%, rgba(0,0,0,0.5) 100%) ,url("https://picsum.photos/1920/1080");
+    color:white;
+}
+.contain h2{
+    font-size: 5rem;
+    font-weight: 700;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width:20%;
+}
+.element{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.element input{
+    padding: 10px;
+    border-bottom: 1px solid rgba(148, 148, 148, 0.4);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius:0;
+    outline:none;
+}
+.form button{
+    padding:15px;
+    font-weight:bold;
+    font-size:1.2rem;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+.form button:hover{
+    background-color: #a9a9a9;
+}
+.button{
+    padding:15px;
+    font-weight:bold;
+    font-size:1.2rem;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    text-decoration:none;
+    color:black;
+    background-color: #d3d3d3;
+}
+.button:hover{
+    background-color: #a9a9a9;
+}
+.navigation{
+    position:absolute;
+    top:0;
+    left:0;
+    padding:20px;
+
+}
+.navigation a{
+    display:flex;
+    gap:10px;
+    align-items: center;
+    cursor:pointer;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    opacity:0.8;
+    transition:0.3s;
+}
+.navigation a:hover{
+    color:#D49B72;
+    transform:scale(1.1);
+}
+@media screen and (max-width: 768px){
+    .form{
+        width: 80%;
+    }
+    .contain h2{
+        font-size: 3rem;
+        padding-top: 20px;
+    }
+    .contain{
+        gap:100px;
+    }
+    .button{
+        padding:10px;
+        margin:0;
+    }
+
+}

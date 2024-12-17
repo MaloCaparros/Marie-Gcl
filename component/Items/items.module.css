@@ -1,0 +1,30 @@
+.lien {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px;
+    text-decoration: none;
+    color: white;
+    width: 30vw;
+    position: relative;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+}
+.lien:hover {
+    transform: scale(1.1);
+}
+.lien h2{
+    font-size:2rem;
+    padding-bottom:20px;
+}
+
+.lien p{
+    font-size: 1.5rem;
+    padding-top:20px;
+}
+@media screen and (max-width: 768px){
+    .lien{
+        width: 80vw;
+    }
+}

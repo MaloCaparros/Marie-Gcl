@@ -1,0 +1,33 @@
+.content{
+    padding-top:50px;
+}
+.carroussel{
+    display:flex;
+    width:fit-content;
+    gap:10px;
+    margin: 0 auto;
+    max-width: 60vw;
+    overflow-y:auto;
+}
+.carroussel div{
+    transition:1.1s;
+}
+.carroussel div:hover{
+    cursor:pointer;
+    transform:scale(0.9);
+}
+.img{
+    width: 150px;
+    height: 150px;
+}
+.content h2{
+    font-size:1.5rem;
+    padding-bottom:15px;
+    text-align: center;
+}
+@media screen and (max-width: 768px){
+    .img{
+        width: 100px;
+        height: 100px;
+    }
+}

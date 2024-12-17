@@ -1,0 +1,91 @@
+.contain{
+    display:flex;
+    height:100vh;
+}
+.form{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    gap:30px;
+    width:100%;
+    align-items: center;
+}
+.content{
+    padding:40px;
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    gap:100px;
+    align-items: center;
+    margin:auto;
+}
+.titre{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.form input{
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px;
+}
+.form input[type="file"]{
+    width:0;
+    height:0;
+    visibility: hidden;
+    padding:0;
+}
+.labelimg{
+    cursor :pointer;
+    background-color: #b2b2b2;
+    padding:10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.labelimg:hover{
+    background-color: #d7d7d7;
+}
+.divselect{
+    width:100%;
+    displaY:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.select{
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px;
+}
+.button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #b2b2b2   ;
+    cursor: pointer;
+    border: none;
+    font-weight:bold;
+    font-size:1.5rem;
+}
+.navigation{
+    display:flex;
+    width:100%;
+    justify-content:center;
+    gap:50px;
+    margin:20px 0;
+}
+.navigation a{
+    text-decoration: none;
+    color: #5d7bb7;
+    font-size: 1.5rem;
+}
+.label{
+    width:30%;
+}
+.publish{
+    display:flex;
+    gap:10px;
+    align-items:center;
+    width:25%;
+}
+.publish label{
+    width:40%;
+}

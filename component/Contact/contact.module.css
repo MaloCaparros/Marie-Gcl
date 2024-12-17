@@ -1,0 +1,215 @@
+.contact{
+    display:flex;
+    background: linear-gradient(90deg, rgba(0,0,0,0.4954774145986519) 0%, rgba(0,0,0,0.5) 100%) ,url("https://picsum.photos/1920/1080");
+    color:white;
+    height:100vh;
+    justify-content: center;
+}
+.left{
+    justify-content: center;
+    display:flex;
+    flex-direction:column;
+    width:45%;
+    height:100%;
+}
+.left h1{
+    font-size:5rem;
+    padding:50px;
+    width:50%;
+}
+.left h1 strong{
+    color:#D49B72;
+}
+.formContact{
+    display:flex;
+    flex-direction:column;
+    gap:50px;
+    padding:20px;
+}
+.formcase{
+    width:70%;
+}
+.formcase input{
+    width:100%;
+    padding:20px;
+    border-bottom: 1px solid rgba(148, 148, 148, 0.4);
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    outline:none;
+
+}
+.formcase input::placeholder, .formcase textarea::placeholder {
+    font-size:1.2rem;
+    color:#D49B72;
+    font-weight:bold;
+    opacity:0.5;
+}
+
+.formcase textarea{
+    width:100%;
+    height:100px;
+    padding:5px;
+    border-bottom: 1px solid rgba(148, 148, 148, 0.4);
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    outline:none;
+
+}
+.formContact button{
+    width:fit-content;
+    padding:15px;
+    border-radius:20px;
+    border:none;
+    background-color:#D49B72;
+    color:black;
+    font-weight:bold;
+    font-size:1.5rem;
+    cursor:pointer;
+}
+.formContact button:hover{
+    color:#D49B72;
+    background-color: #ffe9cd;
+}
+.navigation{
+    position:absolute;
+    top:0;
+    left:0;
+    padding:20px;
+
+}
+.navigation a{
+    display:flex;
+    gap:10px;
+    align-items: center;
+    cursor:pointer;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    opacity:0.8;
+}
+.navigation a:hover{
+    color:#D49B72;
+    transform:scale(1.1);
+}
+
+.right{
+    width:45%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    gap:50px;
+    align-items:center;
+    flex-direction: column;
+    padding:50px;
+}
+.contactMap{
+    width:100%;
+    height:60vh;
+
+}
+.contactMap iframe{
+    border-radius:50% 50% 0 0;
+    border:none;
+    width:100%;
+    height:100%;
+}
+.contactInfo{
+    height:30%;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+.contactInfo p{
+    font-size:1.4rem;
+    padding:10px 0;
+    border-bottom: 2px solid white;
+}
+.contact p strong{
+    color:#D49B72;
+    text-transform:uppercase;
+    font-size:1.5rem;
+    margin-right:100px;
+    display:inline-block;
+    width:170px;
+}
+.contactInfo a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+.contactInfo a:hover{
+    color:#D49B72;
+}
+.right h2{
+    font-size:2.5rem;
+    padding:20px;
+    display:none;
+}
+@media screen and (max-width:768px){
+    .contact{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+        height:140vh;
+        padding-top:60px;
+    }
+    .left{
+        width:100%;
+        height:50%;
+    }
+    .left h1{
+        font-size:3rem;
+        padding:20px;
+        width:100%;
+        text-align:center;
+    }
+    .formContact{
+        width:100%;
+        align-items:center;
+        gap:40px;
+    }
+    .formcase{
+        width:100%;
+    }
+    .formcase input{
+        padding:15px;
+
+    }
+    .formcase textarea{
+        height:80px;
+
+    }
+    .right{
+        width:100%;
+        height:50%;
+        padding:5px;
+        gap:20px;
+    }
+    .contactMap{
+        height:40vh;
+    }
+    .contactInfo{
+        height:60%;
+    }
+    .contactInfo p{
+        font-size:1.2rem;
+    }
+    .contact p strong{
+        font-size:1.2rem;
+        margin-right:10px;
+        width:150px;
+    }
+    .contactInfo a{
+        font-size:1rem;
+    }
+    .right h2{
+        display:block;
+    }
+    .contact iframe{
+        border-radius:0;
+    }
+}

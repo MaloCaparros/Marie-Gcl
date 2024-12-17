@@ -1,0 +1,21 @@
+.home{
+    background: linear-gradient(90deg, rgba(0,0,0,0.4954774145986519) 0%, rgba(0,0,0,0.5) 100%) ,url("https://picsum.photos/1920/1080");
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    padding: 70px 150px;
+}
+.contenu{
+    display: flex;
+    height: 100%;
+}
+@media screen and (max-width: 768px){
+    .home{
+        padding:20px;
+    }
+    .contenu{
+        flex-direction: column;
+        gap: 20px;
+        padding-top:50px;
+    }
+}

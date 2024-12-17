@@ -1,0 +1,27 @@
+.carroussel{
+    display:flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-wrap:wrap;
+    margin-bottom:20px;
+}
+.carroussel img{
+    width: 20%;
+}
+.title{
+    text-align: center;
+    font-size: 2rem;
+    padding:20px 0;
+}
+.navigation{
+    display:flex;
+    width:100%;
+    justify-content:center;
+    gap:50px;
+}
+.navigation a{
+    text-decoration: none;
+    color: #5d7bb7;
+    font-size: 1.5rem;
+}

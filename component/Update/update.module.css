@@ -1,0 +1,36 @@
+.contain{
+    display:flex;
+    height:100vh;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    margin:auto;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap:20px;
+}
+.selection{
+    padding:20px;
+}
+.navigation{
+    display:flex;
+    width:100%;
+    justify-content:center;
+    gap:50px;
+    margin:20px 0;
+}
+.navigation a{
+    text-decoration: none;
+    color: #5d7bb7;
+    font-size: 1.5rem;
+}

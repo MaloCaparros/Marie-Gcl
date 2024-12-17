@@ -1,0 +1,112 @@
+.contain{
+    background: linear-gradient(90deg, rgba(0,0,0,0.4954774145986519) 0%, rgba(0,0,0,0.5) 100%) ,url("https://picsum.photos/1920/1080");
+    color:white;
+    height:100vh;
+}
+.carroussel{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    overflow: auto;
+    width: 80%;
+    margin: 30px 0;
+    flex-wrap:wrap;
+    margin: 0 auto;
+    height:60vh;
+}
+.carroussel div{
+    cursor:pointer;
+    transition:1.1s;
+}
+.carroussel div:hover{
+    transform:scale(1.1);
+}
+.carroussel img{
+    width: 200px;
+}
+.title{
+    text-align: center;
+    text-transform:uppercase;
+    color:#D49B72;
+    font-size: 4rem;
+    padding:20px 0;
+}
+.title span{
+
+}
+.navigation{
+    position:absolute;
+    top:0;
+    left:0;
+    padding:20px;
+}
+.navigation a{
+    display:flex;
+    gap:10px;
+    align-items: center;
+    cursor:pointer;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    opacity:0.8;
+    transition: 0.3s;
+}
+.navigation a:hover{
+    color:#D49B72;
+    transform:scale(1.1);
+}
+.overview{
+    position:absolute;
+    z-index:900;
+    width:100%;
+    background-color:rgba(0,0,0,0.7);
+    height:100vh;
+    top:0;
+    display:flex;
+    justify-content:center;
+    gap:100px;
+    padding:50px;
+}
+.overview button{
+    border:none;
+    background-color: transparent;
+    color:white;
+    cursor:pointer;
+}
+.overview button:hover{
+    color:#D49B72;
+}
+.overview img{
+    width:100%;
+    object-fit:contain;
+}
+
+.overview button:disabled{
+    visibility:hidden;
+}
+.fermeture{
+    position:absolute;
+    top:0;
+    right:0;
+    padding:20px;
+}
+@media screen and (max-width: 768px){
+    .contain{
+        padding-top:70px;
+    }
+    .title{
+        font-size: 3rem;
+    }
+    .carroussel{
+        width:70%;
+        margin: 0 auto;
+        gap:10px;
+        height:50vh;
+    }
+    .overview{
+        gap:20px;
+    }
+    .overview img{
+        width:80%;
+    }
+}

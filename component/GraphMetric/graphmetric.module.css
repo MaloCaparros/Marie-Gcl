@@ -1,0 +1,10 @@
+.graphique{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    width:100%;
+}
+.graph{
+    width:100% !important;
+    height:auto !important;
+}

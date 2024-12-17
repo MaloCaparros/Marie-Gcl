@@ -1,0 +1,143 @@
+
+.imgprofil{
+    border-radius:50%;
+    width:200px;
+    height:200px;
+    object-fit: cover;
+}
+.button:hover{
+    background-color: #a9a9a9;
+}
+.carrou{
+    display:flex;
+    width:70%;
+    gap:20px;
+    height:35vh;
+    overflow: auto;
+}
+.carrou div{
+    display:flex;
+    width:100%;
+    justify-content: center;
+    gap:20px;
+}
+
+.contain{
+    display:flex;
+    width:100%;
+    flex-direction: column;
+    align-items:center;
+    gap:20px;
+    padding:20px;
+    background: linear-gradient(90deg, rgba(0,0,0,0.4954774145986519) 0%, rgba(0,0,0,0.5) 100%) ,url("https://picsum.photos/1920/1080");
+    color:white;
+    height:100vh;
+}
+.form{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    width:100%;
+    align-items:center;
+}
+.form button{
+    width:15%;
+    padding:10px;
+    font-size:1.3rem;
+    border-radius:10px;
+    border:none;
+    cursor: pointer;
+}
+.form button:hover{
+    background-color: #a9a9a9;
+}
+.labelimg input
+{
+    display:none;
+}
+.labelimg{
+    cursor:pointer;
+    background-color:#eee;
+    width:10%;
+    padding:10px;
+    border-radius:10px;
+    text-align: center;
+    color:black;
+}
+.labelimg:hover{
+    background-color: #a9a9a9;
+}
+.retour{
+    display:flex;
+    width:100%;
+    justify-content: center;
+    gap:20px;
+}
+.button{
+    cursor:pointer;
+    background-color:#eee;
+    width:10%;
+    padding:10px;
+    border-radius:10px;
+    text-align: center;
+    text-decoration:none;
+    border:none;
+    color:black;
+    font-weight:bold;
+}
+.navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.navigation a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    opacity: 0.8;
+    transition:0.3s;
+}
+
+.navigation a:hover {
+    color: #D49B72;
+    transform: scale(1.1);
+}
+@media screen and (max-width:768px){
+    .contain{
+        padding:80px 0 0 0;
+    }
+    .contain h1 {
+        font-size: 2rem;
+        text-align: center;
+        width:70%;
+    }
+    .labelimg{
+        width:50%;
+    }
+    .imgprofil {
+        width: 150px;
+        height:150px;
+        border-radius: 50%;
+    }
+    .carrou div{
+        height:30vh;
+        width:100%;
+        overflow: auto;
+    }
+    .carrou div img{
+        width:auto;
+    }
+    .button{
+        width: 50%;
+    }
+    .form button{
+        width: 50%;
+    }
+
+}
